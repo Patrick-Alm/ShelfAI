@@ -1,5 +1,5 @@
 [project]
-name = "ia-com-uv"
+name = "plantai"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
@@ -10,7 +10,7 @@ requires-python = ">=3.12"
 dependencies = []
 
 [project.scripts]
-ia-com-uv = "ia_com_uv:main"
+plantai = "plantai:main"
 
 [build-system]
 requires = ["hatchling"]
