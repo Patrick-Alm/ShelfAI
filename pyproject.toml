@@ -7,7 +7,9 @@ authors = [
     { name = "Patrick Almeida", email = "patrickbalmeida@gmail.com" }
 ]
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "numpy>=2.2.6",
+]
 
 [project.scripts]
 plantai = "plantai:main"
@@ -15,3 +17,8 @@ plantai = "plantai:main"
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3.5",
+]
