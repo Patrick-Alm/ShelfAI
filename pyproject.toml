@@ -1,7 +1,7 @@
 [project]
 name = "plantai"
 version = "0.1.0"
-description = "Add your description here"
+description = "Meu pacote PlantAI"
 readme = "README.md"
 authors = [
     { name = "Patrick Almeida", email = "patrickbalmeida@gmail.com" }
