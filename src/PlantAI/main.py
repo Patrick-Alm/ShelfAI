@@ -83,7 +83,12 @@ Examples:
         detection_results = detector.detect_products(str(image_path))
 
         if args.visualize:
-            output_path = args.output or str(image_path).replace('.jpg', '_detected.jpg')
+            if args.output:
+                output_path = args.output
+                if not output_path.lower().endswith(('.jpg', '.jpeg', '.png', '.bmp', '.tiff')):
+                    output_path += '.jpg'
+            else:
+                output_path = str(image_path).replace('.jpg', '_detected.jpg')
             detector.visualize(str(image_path), output_path)
 
         analyzer = ShelfAnalyzer(provider=args.provider)
