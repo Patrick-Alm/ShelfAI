@@ -19,7 +19,7 @@ dependencies = [
 ]
 
 [project.scripts]
-plantai = "plantai:main"
+shelfai = "PlantAI.main:main"
 
 [build-system]
 requires = ["hatchling"]

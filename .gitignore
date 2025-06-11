@@ -1,4 +1,7 @@
 .env
 .idea
 .vscode
+
 /images
+
+**/__pycache__/
