@@ -19,7 +19,7 @@ ShelfAI combines YOLOv8 object detection with LLM analysis to provide comprehens
 
 ```bash
 # Clone the repository
-git clone https://github.com/Patrick-Alm/PlantAI.git
+git clone git@github.com:Patrick-Alm/PlantAI.git
 cd PlantAI
 
 # Install with uv (recommended)
