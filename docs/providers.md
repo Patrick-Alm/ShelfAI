@@ -46,7 +46,7 @@ class BaseProvider:
 ### ClaudeClient
 
 ```python
-from PlantAI.providers import ClaudeClient
+from ShelfAI.providers import ClaudeClient
 
 client = ClaudeClient(
     api_key="your-api-key",           # Optional, uses ANTHROPIC_API_KEY env var
@@ -76,7 +76,7 @@ response = client.generate_response("Analyze this shelf data...")
 ### GeminiClient
 
 ```python
-from PlantAI.providers import GeminiClient
+from ShelfAI.providers import GeminiClient
 
 client = GeminiClient(
     api_key="your-api-key",           # Optional, uses GOOGLE_API_KEY env var
@@ -102,7 +102,7 @@ response = client.generate_response("Analyze this shelf data...")
 ### OpenAIClient
 
 ```python
-from PlantAI.providers import OpenAIClient
+from ShelfAI.providers import OpenAIClient
 
 client = OpenAIClient(
     api_key="your-api-key",           # Optional, uses OPENAI_API_KEY env var
@@ -130,7 +130,7 @@ response = client.generate_response("Analyze this shelf data...")
 ### Provider Comparison
 
 ```python
-from PlantAI.providers import ClaudeClient, GeminiClient, OpenAIClient
+from ShelfAI.providers import ClaudeClient, GeminiClient, OpenAIClient
 
 # Initialize all providers
 providers = {
@@ -226,7 +226,7 @@ class CostOptimizedAnalysis:
 ### Custom Provider Implementation
 
 ```python
-from PlantAI.providers.base import BaseProvider
+from ShelfAI.providers.base import BaseProvider
 import requests
 
 class CustomLLMProvider(BaseProvider):

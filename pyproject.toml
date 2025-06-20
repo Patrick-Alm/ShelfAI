@@ -1,10 +1,11 @@
 [project]
-name = "plantai"
+name = "shelfai"
 version = "0.1.0"
-description = "Meu pacote PlantAI"
+description = "AI-powered grocery shelf analysis using computer vision and large language models for retail inventory management"
 readme = "README.md"
 authors = [
-    { name = "Patrick Almeida", email = "patrickbalmeida@gmail.com" }
+    { name = "Patrick Almeida", email = "patrickbalmeida@gmail.com" },
+    { name = "Pedro Pereira", email = "devpereirapedro@gmail.com" }
 ]
 requires-python = ">=3.12"
 dependencies = [
@@ -19,7 +20,7 @@ dependencies = [
 ]
 
 [project.scripts]
-shelfai = "PlantAI.main:main"
+shelfai = "ShelfAI.main:main"
 
 [build-system]
 requires = ["hatchling"]
@@ -27,9 +28,9 @@ build-backend = "hatchling.build"
 
 [dependency-groups]
 dev = [
-    "plantai",
+    "shelfai",
     "pytest>=8.3.5",
 ]
 
 [tool.uv.sources]
-plantai = { workspace = true }
+shelfai = { workspace = true }

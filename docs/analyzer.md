@@ -111,7 +111,7 @@ Saves analysis results to a text file.
 ### Basic Analysis
 
 ```python
-from PlantAI import ShelfAnalyzer
+from ShelfAI import ShelfAnalyzer
 
 # Initialize with default Claude provider
 analyzer = ShelfAnalyzer()
@@ -133,7 +133,7 @@ for action in results['insights']['action_steps']:
 ### Provider Comparison
 
 ```python
-from PlantAI import ShelfAnalyzer
+from ShelfAI import ShelfAnalyzer
 
 # Compare insights across providers
 providers = ['claude', 'gemini', 'openai']
@@ -163,7 +163,7 @@ for section in sections:
 ### Detailed Analysis Workflow
 
 ```python
-from PlantAI import ShelfAnalyzer
+from ShelfAI import ShelfAnalyzer
 import json
 
 analyzer = ShelfAnalyzer(provider='gemini', temperature=0.1)

@@ -20,7 +20,7 @@ ShelfAI combines YOLOv8 object detection with LLM analysis to provide comprehens
 ```bash
 # Clone the repository
 git clone git@github.com:Patrick-Alm/PlantAI.git
-cd PlantAI
+cd ShelfAI
 
 # Install with uv (recommended)
 uv sync
@@ -52,7 +52,7 @@ shelfai shelf_image.jpg --provider gemini --confidence 0.25 --model-size x --vis
 ### Python Package Usage
 
 ```python
-from PlantAI import ProductDetector, ShelfAnalyzer
+from ShelfAI import ProductDetector, ShelfAnalyzer
 
 # Initialize components
 detector = ProductDetector(confidence=0.4, model_size='x')

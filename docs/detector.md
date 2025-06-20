@@ -85,7 +85,7 @@ Creates visualization with bounding boxes and saves to file.
 ### Basic Detection
 
 ```python
-from PlantAI import ProductDetector
+from ShelfAI import ProductDetector
 
 # Initialize with default settings
 detector = ProductDetector()
@@ -255,7 +255,7 @@ Typical processing times (varies by hardware):
 ### With ShelfAnalyzer
 
 ```python
-from PlantAI import ProductDetector, ShelfAnalyzer
+from ShelfAI import ProductDetector, ShelfAnalyzer
 
 detector = ProductDetector(confidence=0.3, model_size='x')
 analyzer = ShelfAnalyzer(provider='claude')
